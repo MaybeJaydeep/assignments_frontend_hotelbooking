@@ -1,11 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hotel Booking</title>
+    <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#"><span class="logo-text-1">Just</span><span class="logo-text-2">Stay</span></a>
+            </div>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Rooms</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+        <banner>
+            <h1>Experience Luxury Like Never Before</h1>
+            <p>
+                Your perfect stay awaits you. Book now and enjoy exclusive offers!
+            </p>
+            <button class="btn-book-now">Book Now</button>
+        </banner>
+    </header>
+    <main>
+        <!-- Main content goes here -->
+        <h1>Welcome to Our Hotel Booking Service</h1>
+        <p>
+            Discover the best deals on hotels worldwide. Whether you're traveling
+            for business or leisure, we have the perfect accommodation for you.
+        </p>
+        <hr />
+        <br />
+        <table border="1" cellpadding="10" cellspacing="0">
+            <thead>
+                <tr>
+                    <th colspan="4">Available Hotels</th>
+                </tr>
+                <tr>
+                    <th>Hotel Name</th>
+                    <th>Location</th>
+                    <th>Price per Night</th>
+                    <th>Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Grand Palace</td>
+                    <td>Ahmedabad</td>
+                    <td>₹2500</td>
+                    <td>4.5</td>
+                </tr>
+                <tr>
+                    <td>Sea View Resort</td>
+                    <td>Jamnagar</td>
+                    <td>₹1800</td>
+                    <td>4.0</td>
+                </tr>
+                <tr>
+                    <td>Hillock Hotel</td>
+                    <td>Ahmedabad</td>
+                    <td>₹1500</td>
+                    <td>4.2</td>
+                </tr>
+            </tbody>
+        </table>
+        <form action="#" method="get">
+            <legend>Booking Details <br><br> 
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin">
+            <br><br>
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout">
+            <br><br>
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests">
+            <br><br>
+            <input type="radio" id="single" name="roomtype" value="single">
+            <label for="single">Single Room</label>
+            <input type="radio" id="double" name="roomtype" value="double">
+            <label for="double">Double Room</label>
+            <input type="radio" id="suite" name="roomtype" value="suite">
+            <label for="suite">Suite</label>
+            <br><br>
+            <button type="submit">Book Now</button>
+            </legend>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2026 JustStay. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
