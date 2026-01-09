@@ -2,107 +2,218 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hotel Booking</title>
-    <link rel="stylesheet" href="assests/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JustStay Hotel - Luxury accommodation in Ahmedabad, India">
+    <title>JustStay - Hotel Landing Page</title>
+    <link rel="stylesheet" href="assests/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-        <header>
+    <header class="header">
+        <nav class="navbar">
             <div class="container">
-                <nav class="navbar">
+                <div class="navbar-content">
                     <div class="logo">
-                        <a href="#"><span class="logo-text-1">Cool</span><span class="logo-text-2">Stay</span></a>
+                        <a href="#" class="logo-link">JustStay</a>
                     </div>
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Rooms</a>
-                    <a href="#">Services</a>
-                    <a href="#">Contact</a>
-                </nav>
-                <div class="banner-content">
-                    <h1>Experience Luxury Like Never Before</h1>
-                    <p>
-                        Your perfect stay awaits you. Book now and enjoy exclusive offers!
-                    </p>
-                    <button class="btn-book-now">Book Now</button>
+                    <ul class="nav-menu">
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#rooms" class="nav-link">Rooms</a></li>
+                        <li><a href="#services" class="nav-link">Services</a></li>
+                        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
                 </div>
             </div>
-        </header>
-        <main>
-            <!-- Main content goes here -->
-            <h1>Welcome to Our Hotel Booking Service</h1>
-            <p>
-                Discover the best deals on hotels worldwide. Whether you're traveling
-                for business or leisure, we have the perfect accommodation for you.
-            </p>
-            <br />
-    </div>
-    <table border="1" cellpadding="10" cellspacing="0">
-        <thead>
-            <tr>
-                <th colspan="4">Available Hotels</th>
-            </tr>
-            <tr>
-                <th>Hotel Name</th>
-                <th>Location</th>
-                <th>Price per Night</th>
-                <th>Rating</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Grand Palace</td>
-                <td>Ahmedabad</td>
-                <td>₹2500</td>
-                <td>4.5</td>
-            </tr>
-            <tr>
-                <td>Sea View Resort</td>
-                <td>Jamnagar</td>
-                <td>₹1800</td>
-                <td>4.0</td>
-            </tr>
-            <tr>
-                <td>Hillock Hotel</td>
-                <td>Ahmedabad</td>
-                <td>₹1500</td>
-                <td>4.2</td>
-            </tr>
-        </tbody>
-    </table>
-    <form action="#" method="get">
-        <legend>
-            Booking Details <br /><br />
-            <label for="checkin">Check-in Date:</label>
-            <input type="date" id="checkin" name="checkin" />
-            <br /><br />
-            <label for="checkout">Check-out Date:</label>
-            <input type="date" id="checkout" name="checkout" />
-            <br /><br />
-            <label for="guests">Number of Guests:</label>
-            <input type="number" id="guests" name="guests" />
-            <br /><br />
-            <input type="radio" id="single" name="roomtype" value="single" />
-            <label for="single">Single Room</label>
-            <input type="radio" id="double" name="roomtype" value="double" />
-            <label for="double">Double Room</label>
-            <input type="radio" id="suite" name="roomtype" value="suite" />
-            <label for="suite">Suite</label>
-            <br /><br />
-            <button type="submit">Book Now</button>
-        </legend>
-    </form>
+        </nav>
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <p class="hero-subtitle">Welcome to Luxury</p>
+                    <h1 class="hero-title">Your Perfect Stay Awaits</h1>
+                    <p class="hero-location">JustStay Hotel • Ahmedabad, India</p>
+                    <p class="hero-description">Experience unparalleled comfort and hospitality in the heart of Gujarat</p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary">Book Your Room</button>
+                        <button class="btn-secondary">Explore More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main class="main-content">
+        <section class="about-divider">
+            <div class="container">
+                <div class="divider-line"></div>
+                <p class="divider-text">— About Us —</p>
+            </div>
+        </section>
+
+        <section class="history-section" id="about">
+            <div class="container">
+                <div class="section-content">
+                    <div class="section-image">
+                        <img src="assests/images/hotel-image-1.jpg" alt="JustStay Hotel Building" class="content-image">
+                    </div>
+                    <div class="section-text-content">
+                        <h2 class="section-title">History of JustStay</h2>
+                        <p class="section-text">
+                            Founded in 2016, JustStay has been a beacon of hospitality in the heart of Ahmedabad. What started as a vision to provide exceptional accommodation has grown into one of the city's most trusted and beloved hotels. Our journey began with a simple mission: to create a space where guests feel at home while experiencing the rich culture and warmth of Gujarat.
+                        </p>
+                        <p class="section-text">
+                            Over the years, we've hosted thousands of travelers, business professionals, and families, each leaving with cherished memories. Our commitment to excellence, combined with traditional Indian hospitality and modern amenities, has made JustStay a preferred choice for discerning travelers seeking comfort, luxury, and authentic experiences.
+                        </p>
+                        <button class="btn-read-more">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-choose-section">
+            <div class="container">
+                <div class="section-content section-content-reverse">
+                    <div class="section-text-content">
+                        <h2 class="section-title">Why Choose us?</h2>
+                        <p class="section-text">
+                            At JustStay, we believe that every stay should be exceptional. Our strategic location in Ahmedabad provides easy access to business districts, cultural landmarks, and entertainment hubs. Our 50 beautifully designed rooms combine modern elegance with traditional Indian aesthetics, ensuring comfort and style in every detail.
+                        </p>
+                        <p class="section-text">
+                            We pride ourselves on personalized service, world-class amenities, and a commitment to making your stay memorable. From our award-winning restaurant to our state-of-the-art business facilities, every aspect of JustStay is designed with your comfort and satisfaction in mind. Experience the perfect blend of luxury and affordability.
+                        </p>
+                        <button class="btn-read-more">Read More</button>
+                    </div>
+                    <div class="section-image">
+                        <img src="assests/images/hotel-image-2.jpg" alt="JustStay Hotel Building" class="content-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">8</span>
+                        <span class="stat-label">Years of Service</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">459</span>
+                        <span class="stat-label">Sq. Meter Area</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50</span>
+                        <span class="stat-label">Nice Rooms</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3786</span>
+                        <span class="stat-label">Happy Visitors</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rooms-section" id="rooms">
+            <div class="container">
+                <h2 class="section-title">Explore Our Rooms</h2>
+                <p class="section-intro">Experience luxury and comfort in our thoughtfully designed accommodations</p>
+                <div class="rooms-grid">
+                    <div class="room-card">
+                        <div class="room-image">
+                            <img src="assests/images/room-deluxe.jpg" alt="Deluxe Room" class="room-img">
+                        </div>
+                        <div class="room-content">
+                            <h3 class="room-title">Deluxe Room</h3>
+                            <p class="room-description">Spacious and elegantly furnished with modern amenities, perfect for business travelers and couples. Features a comfortable king-size bed, work desk, and city views.</p>
+                            <div class="room-features">
+                                <span class="feature-tag">Wi-Fi</span>
+                                <span class="feature-tag">TV</span>
+                                <span class="feature-tag">AC</span>
+                            </div>
+                            <div class="room-price">₹2,500 <span class="price-per">per night</span></div>
+                            <button class="btn-book-room">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="room-card">
+                        <div class="room-image">
+                            <img src="assests/images/room-executive.jpg" alt="Executive Suite" class="room-img">
+                        </div>
+                        <div class="room-content">
+                            <h3 class="room-title">Executive Suite</h3>
+                            <p class="room-description">Luxurious suite with separate living area, premium furnishings, and enhanced amenities. Ideal for extended stays and special occasions.</p>
+                            <div class="room-features">
+                                <span class="feature-tag">Wi-Fi</span>
+                                <span class="feature-tag">Minibar</span>
+                                <span class="feature-tag">Room Service</span>
+                            </div>
+                            <div class="room-price">₹4,500 <span class="price-per">per night</span></div>
+                            <button class="btn-book-room">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="room-card">
+                        <div class="room-image">
+                            <img src="assests/images/room-family.jpg" alt="Family Room" class="room-img">
+                        </div>
+                        <div class="room-content">
+                            <h3 class="room-title">Family Room</h3>
+                            <p class="room-description">Comfortable accommodation for families with connecting rooms or extra beds. Includes all amenities needed for a perfect family vacation.</p>
+                            <div class="room-features">
+                                <span class="feature-tag">Wi-Fi</span>
+                                <span class="feature-tag">Extra Beds</span>
+                                <span class="feature-tag">Safe</span>
+                            </div>
+                            <div class="room-price">₹3,500 <span class="price-per">per night</span></div>
+                            <button class="btn-book-room">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section" id="services">
+            <div class="container">
+                <h2 class="section-title">Explore Our Services</h2>
+            </div>
+        </section>
+
+        <section class="testimonials-section" id="testimonials">
+            <div class="container">
+                <h2 class="section-title">What People Say?</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <h3 class="testimonial-title">JustStay</h3>
+                        <p class="testimonial-text">
+                            Govt makes sure your children are in safe, safe, safe, and safe.
+                        </p>
+                    </div>
+                    <div class="testimonial-card">
+                        <h3 class="testimonial-title">JustStay</h3>
+                        <p class="testimonial-text">
+                            Govt makes sure your children are in safe, safe, safe, and safe. JustStay is a great place to watch and watch your children.
+                        </p>
+                    </div>
+                    <div class="testimonial-card">
+                        <h3 class="testimonial-title">JustStay</h3>
+                        <p class="testimonial-text">
+                            Govt makes sure your children are in safe, safe, safe, and safe.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-        <p>&copy; 2026 JustStay. All rights reserved.</p>
+
+    <footer class="footer" id="contact">
+        <div class="container">
+            <p class="footer-text">&copy; 2026 JustStay. All rights reserved.</p>
+        </div>
     </footer>
+
     <script src="assests/js/general.js"></script>
 </body>
 
