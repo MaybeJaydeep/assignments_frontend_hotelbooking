@@ -855,8 +855,13 @@ body {
 @media (max-width: 768px) {
     .header { background-position: center top; }
 
+    /* show a CSS-only hamburger; hidden on desktop */
+    .nav-toggle { display: none; }
+    .nav-toggle-label { display: none; }
+
     .hero {
         padding: 120px 0 60px;
+        /* default centered for some tablets; smaller devices will override below */
         justify-content: center;
         text-align: center;
         min-height: auto;
@@ -940,6 +945,37 @@ body {
 
     .stat-number { font-size: 36px; }
     .stat-label { font-size: 14px; }
+}
+
+/* CSS-only hamburger + mobile hero alignment adjustments (<=768px): */
+.nav-toggle { display: none; }
+.nav-toggle-label { display: none; }
+
+@media (max-width: 768px) {
+    /* show toggle button */
+    .nav-toggle { display: none; }
+    .nav-toggle-label { display: block; color: #ffffff; font-size: 26px; cursor: pointer; margin-left: auto; z-index: 120; }
+
+    /* hide menu by default and show on toggle */
+    .nav-menu { display: none; position: absolute; top: 72px; right: 20px; background: rgba(0,0,0,0.64); padding: 16px; border-radius: 12px; width: 220px; flex-direction: column; gap: 12px; box-shadow: 0 12px 30px rgba(0,0,0,0.4); }
+    /* when checked, show the menu - input + label + ul structure */
+    #nav-toggle:checked + .nav-toggle-label + .nav-menu { display: flex; }
+
+    .nav-menu li { margin: 0; }
+    .nav-link { color: #ffffff; display: block; padding: 8px 0; font-weight: 600; }
+
+    /* hero: align left/bottom on smaller screens to match mock */
+    .hero { justify-content: flex-end; align-items: flex-end; text-align: left; padding: 160px 0 40px; }
+    .hero-content { margin-left: 20px; max-width: 420px; }
+    .hero-title { font-size: 44px; text-align: left; line-height: 1.05; }
+    .hero-buttons { justify-content: flex-start; }
+}
+
+@media (max-width: 420px) {
+    .hero { padding: 120px 0 30px; }
+    .hero-content { max-width: 320px; margin-left: 14px; }
+    .hero-title { font-size: 40px; }
+    .nav-menu { right: 12px; top: 64px; width: 260px; }
 }
 
 /* Small mobile: stack content and make buttons full-width */
